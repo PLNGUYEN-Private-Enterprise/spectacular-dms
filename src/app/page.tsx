@@ -110,11 +110,11 @@ export const metadata: Metadata = {
 	title:
 		"Spectacular Design & Merch Solutions | Design, Print Ads, Merchandise",
 	description:
-		"Spectacular Design & Merch Solutions helps Australian businesses with affordable design, print ads, and merchandise. Fast turnaround, quality finish. Call 0432 520 943 or chat on Messenger.",
+		"Affordable design, print ads, and merchandise for Australian businesses. Call 0432 520 943 or chat on Messenger.",
 	openGraph: {
 		title: "Spectacular Design & Merch Solutions",
 		description:
-			"Affordable design, print ads, and merchandise for Australian businesses. Fast turnaround and quality finish.",
+			"Affordable design, print ads, and merchandise for Australian businesses.",
 		type: "website",
 	},
 };
@@ -133,7 +133,7 @@ export default function Page() {
 	const services = [
 		{
 			title: "Graphic / Branding Design",
-			desc: "Build a brand that looks consistent everywhere.",
+			desc: "Cohesive, professional branding.",
 			items: [
 				"Logos",
 				"Brand kits",
@@ -145,7 +145,7 @@ export default function Page() {
 		},
 		{
 			title: "Print Ads & Print Design",
-			desc: "Print-ready artwork that communicates clearly.",
+			desc: "Print-ready visuals that sell.",
 			items: [
 				"Flyers",
 				"Brochures",
@@ -158,7 +158,7 @@ export default function Page() {
 		},
 		{
 			title: "Merchandise",
-			desc: "Memorable items your customers use every day.",
+			desc: "Practical items customers love.",
 			items: [
 				"T-shirts / uniforms",
 				"Caps",
@@ -171,7 +171,7 @@ export default function Page() {
 		},
 		{
 			title: "Labels / Decoration",
-			desc: "Make products shelf-ready and on-brand.",
+			desc: "Shelf-ready labels and finishes.",
 			items: [
 				"Product labels",
 				"Decals",
@@ -183,14 +183,14 @@ export default function Page() {
 		},
 		{
 			title: "Corporate Gifts",
-			desc: "Premium packs for teams, clients, and events.",
+			desc: "Premium packs for teams and clients.",
 			items: ["Gift sets", "Welcome packs", "Event swag", "Custom bundles"],
 			icon: GiftIcon,
 		},
 		{
 			title: "Custom Requests",
-			desc: "Tell us the idea and we will make it real.",
-			items: ["One-off prints", "Limited drops", "Urgent jobs", "Unique materials"],
+			desc: "Unique materials and one-offs.",
+			items: ["One-off prints", "Limited drops", "Urgent jobs", "Special finishes"],
 			icon: CustomIcon,
 		},
 	];
@@ -201,59 +201,49 @@ export default function Page() {
 		"Posters and window signage",
 		"Event banners",
 		"Brochures and catalogues",
-		"Packaging sleeves",
 	];
 
-	const merchChips = [
-		"Apparel",
-		"Drinkware",
-		"Stickers",
-		"Gifts",
-		"Uniforms",
-		"Eco packs",
-	];
+	const merchChips = ["Apparel", "Drinkware", "Stickers", "Gifts", "Uniforms"];
 
 	const processSteps = [
 		{
 			title: "Brief",
-			text: "Tell us your goals, sizes, quantities, and timeline.",
+			text: "Share goals, sizes, quantities, and timeline.",
 		},
 		{
 			title: "Mockup",
-			text: "We design and share a clear mockup for review.",
+			text: "We design and send a clear preview.",
 		},
 		{
 			title: "Approve",
-			text: "Confirm artwork, finishes, and costs before production.",
+			text: "Confirm artwork, finishes, and costs.",
 		},
 		{
 			title: "Print / Deliver",
-			text: "We print, quality-check, then deliver or arrange pickup.",
+			text: "We produce, check, then deliver or pickup.",
 		},
 	];
 
 	const portfolio = [
-		{ label: "Logo Set", tone: "from-emerald-500/30 via-teal-300/20 to-white" },
-		{ label: "Poster", tone: "from-amber-500/30 via-orange-300/20 to-white" },
-		{ label: "Packaging", tone: "from-sky-500/30 via-cyan-300/20 to-white" },
-		{ label: "Uniform", tone: "from-rose-500/30 via-pink-300/20 to-white" },
-		{ label: "Sticker", tone: "from-lime-500/30 via-emerald-300/20 to-white" },
-		{ label: "Menu", tone: "from-indigo-500/30 via-blue-300/20 to-white" },
+		{ label: "Logo Set", tone: "from-[#00AEEF]/25 via-white to-white" },
+		{ label: "Poster", tone: "from-[#E4007F]/20 via-white to-white" },
+		{ label: "Packaging", tone: "from-[#FDE100]/30 via-white to-white" },
+		{ label: "Uniform", tone: "from-[#00AEEF]/20 via-white to-white" },
+		{ label: "Sticker", tone: "from-[#E4007F]/20 via-white to-white" },
+		{ label: "Menu", tone: "from-[#2f2f2f]/10 via-white to-white" },
 	];
 
 	const testimonials = [
 		{
-			quote:
-				"Fast turnaround and clear communication. Our new cafe menus look premium.",
+			quote: "Fast turnaround and clear updates. The menus looked premium.",
 			name: "Emma Clarke, Sydney",
 		},
 		{
-			quote: "Great value for money and the quality is spot on. Highly recommend.",
+			quote: "Great value and the quality is spot on. Easy to work with.",
 			name: "Liam O'Connor, Melbourne",
 		},
 		{
-			quote:
-				"They handled design and merch in one go. Super easy for our small team.",
+			quote: "Design and merch handled together. Smooth process end-to-end.",
 			name: "Sophie Nguyen, Brisbane",
 		},
 	];
@@ -265,11 +255,11 @@ export default function Page() {
 		},
 		{
 			q: "Are revisions included?",
-			a: "Yes, reasonable revisions are included to make sure you are happy with the result.",
+			a: "Yes. Reasonable revisions are included to get it right.",
 		},
 		{
 			q: "Do you have minimum print quantities?",
-			a: "Minimums vary by product and material. We will recommend the most cost-effective option.",
+			a: "Minimums vary by product and material. We will recommend the best option.",
 		},
 		{
 			q: "Do you offer delivery or pickup?",
@@ -282,23 +272,23 @@ export default function Page() {
 	];
 
 	return (
-		<div className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-slate-50 text-slate-900 font-['Sora','Trebuchet_MS','Verdana',sans-serif]">
-			<header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur">
+		<div className="min-h-screen bg-[#f8f9fb] text-[#2b2b2b] font-['Sora','Trebuchet_MS','Verdana',sans-serif]">
+			<header className="sticky top-0 z-50 border-b border-[#00AEEF]/20 bg-white/90 backdrop-blur">
 				<div className="mx-auto w-full max-w-6xl px-4 py-4 md:px-6">
 					<div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
 						<div className="flex items-center gap-3">
-							<div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+							<div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-[#00AEEF]/30">
 								<Image
 									src="/dms-logo.png"
 									alt="SpectacularDMS logo"
-									width={40}
-									height={40}
+									width={44}
+									height={44}
 									priority
-									className="h-10 w-10 object-contain"
+									className="h-11 w-11 object-contain"
 								/>
 							</div>
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">
+								<p className="text-xs uppercase tracking-[0.3em] text-[#7a7a7a]">
 									SpectacularDMS
 								</p>
 								<p className="text-lg font-['Playfair_Display','Georgia',serif] font-semibold">
@@ -306,12 +296,12 @@ export default function Page() {
 								</p>
 							</div>
 						</div>
-						<nav className="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-[0.22em] text-slate-600">
+						<nav className="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#4a4a4a]">
 							{navItems.map((item) => (
 								<a
 									key={item.href}
 									href={item.href}
-									className="transition hover:text-slate-900"
+									className="transition hover:text-[#E4007F]"
 								>
 									{item.label}
 								</a>
@@ -320,7 +310,7 @@ export default function Page() {
 						<div className="flex flex-wrap items-center gap-3">
 							<a
 								href="tel:0432520943"
-								className="rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-slate-800"
+								className="rounded-full bg-[#00AEEF] px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-[#0094c7]"
 							>
 								Call 0432 520 943
 							</a>
@@ -328,7 +318,7 @@ export default function Page() {
 								href="https://m.me/SpectacularDMS"
 								target="_blank"
 								rel="noreferrer"
-								className="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+								className="rounded-full bg-[#E4007F] px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-[#c7006f]"
 							>
 								Chat on Messenger
 							</a>
@@ -339,31 +329,26 @@ export default function Page() {
 
 			<main>
 				<section className="relative overflow-hidden">
-					<div className="absolute -top-28 right-0 h-72 w-72 rounded-full bg-[radial-gradient(circle_at_top,_rgba(15,23,42,0.16),_transparent_60%)] blur-2xl" />
-					<div className="absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-[radial-gradient(circle_at_top,_rgba(14,116,144,0.18),_transparent_60%)] blur-2xl" />
-					<div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 md:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
-						<div className="space-y-6">
-							<p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">
+					<div className="absolute -top-24 right-0 h-64 w-64 rounded-full bg-[radial-gradient(circle_at_top,_rgba(0,174,239,0.2),_transparent_60%)] blur-2xl" />
+					<div className="absolute -bottom-24 left-0 h-64 w-64 rounded-full bg-[radial-gradient(circle_at_top,_rgba(228,0,127,0.18),_transparent_60%)] blur-2xl" />
+					<div className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-12 md:px-6 lg:grid-cols-[1.1fr_0.9fr]">
+						<div className="space-y-4">
+							<p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#6b6b6b]">
 								Design • Print Ads • Merchandise
 							</p>
-							<h1 className="text-4xl font-['Playfair_Display','Georgia',serif] font-semibold leading-tight text-slate-900 md:text-5xl">
+							<h1 className="text-4xl font-['Playfair_Display','Georgia',serif] font-semibold leading-tight text-[#1f1f1f] md:text-5xl">
 								Professional design, print, and merch for Australian businesses.
 							</h1>
-							<div className="space-y-4 text-base leading-relaxed text-slate-700">
-								<p>
-									Welcome to Spectacular Design &amp; Merch Solutions! We aim to offer Design
-									and Merchandising solutions at an affordable price. Ever had amazing ideas
-									but find it difficult to spend the time to bring it to fruition? We are
-									here to help.
-								</p>
-								<p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-									Friendly, responsive, and built for Australia.
-								</p>
-							</div>
+							<p className="text-sm leading-relaxed text-[#4a4a4a]">
+								Welcome to Spectacular Design &amp; Merch Solutions! We aim to offer Design
+								and Merchandising solutions at an affordable price. Ever had amazing ideas
+								but find it difficult to spend the time to bring it to fruition? We are
+								here to help!
+							</p>
 							<div className="flex flex-wrap gap-3">
 								<a
 									href="tel:0432520943"
-									className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+									className="rounded-full bg-[#00AEEF] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0094c7]"
 								>
 									Call 0432 520 943
 								</a>
@@ -371,93 +356,84 @@ export default function Page() {
 									href="https://m.me/SpectacularDMS"
 									target="_blank"
 									rel="noreferrer"
-									className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+									className="rounded-full bg-[#E4007F] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#c7006f]"
 								>
 									Chat on Messenger
 								</a>
 							</div>
-							<div className="flex flex-wrap gap-3 text-sm">
-								<span className="rounded-full bg-white px-4 py-2 text-slate-700 shadow-sm">
+							<div className="flex flex-wrap gap-2 text-xs">
+								<span className="rounded-full bg-[#FDE100] px-3 py-1 font-semibold text-[#2b2b2b] shadow-sm">
 									Affordable
 								</span>
-								<span className="rounded-full bg-white px-4 py-2 text-slate-700 shadow-sm">
+								<span className="rounded-full bg-white px-3 py-1 font-semibold text-[#2b2b2b] shadow-sm">
 									Fast turnaround
 								</span>
-								<span className="rounded-full bg-white px-4 py-2 text-slate-700 shadow-sm">
+								<span className="rounded-full bg-white px-3 py-1 font-semibold text-[#2b2b2b] shadow-sm">
 									Quality finish
 								</span>
 							</div>
 						</div>
-						<div className="relative">
-							<div className="rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-xl">
-								<h2 className="text-xl font-['Playfair_Display','Georgia',serif] font-semibold">
-									Why SpectacularDMS?
-								</h2>
-								<ul className="mt-4 space-y-4 text-sm text-slate-700">
-									<li className="flex items-start gap-3">
-										<span className="mt-1 inline-flex h-2 w-2 rounded-full bg-slate-900" />
-										Dedicated support with Johnny Kim.
-									</li>
-									<li className="flex items-start gap-3">
-										<span className="mt-1 inline-flex h-2 w-2 rounded-full bg-slate-900" />
-										Clear mockups before printing.
-									</li>
-									<li className="flex items-start gap-3">
-										<span className="mt-1 inline-flex h-2 w-2 rounded-full bg-slate-900" />
-										Flexible quantities for small and bulk runs.
-									</li>
-									<li className="flex items-start gap-3">
-										<span className="mt-1 inline-flex h-2 w-2 rounded-full bg-slate-900" />
-										Design + print + merch in one place.
-									</li>
-								</ul>
-								<div className="mt-6 rounded-2xl bg-slate-900 px-5 py-4 text-sm text-white">
-									<p className="font-semibold">Ready to start today?</p>
-									<p className="text-slate-200">Call 0432 520 943 or chat on Messenger.</p>
-								</div>
+						<div className="rounded-3xl border border-[#00AEEF]/20 bg-white p-6 shadow-sm">
+							<h2 className="text-lg font-['Playfair_Display','Georgia',serif] font-semibold text-[#1f1f1f]">
+								Quick snapshot
+							</h2>
+							<ul className="mt-4 space-y-3 text-sm text-[#4a4a4a]">
+								<li className="flex items-start gap-3">
+									<span className="mt-1 h-2 w-2 rounded-full bg-[#00AEEF]" />
+									Design + print + merch under one roof.
+								</li>
+								<li className="flex items-start gap-3">
+									<span className="mt-1 h-2 w-2 rounded-full bg-[#E4007F]" />
+									Clear mockups and approvals before production.
+								</li>
+								<li className="flex items-start gap-3">
+									<span className="mt-1 h-2 w-2 rounded-full bg-[#2f2f2f]" />
+									Australian-focused support with Johnny Kim.
+								</li>
+							</ul>
+							<div className="mt-5 rounded-2xl bg-[#f2f2f2] px-4 py-3 text-xs text-[#4a4a4a]">
+								ABN: 35 422 477 055
 							</div>
-							<div className="absolute -bottom-6 -right-6 hidden h-24 w-24 rounded-3xl bg-slate-900/10 lg:block" />
 						</div>
 					</div>
 				</section>
 
 				<section id="services" className="scroll-mt-24">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">Services</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#6b6b6b]">Services</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
-									Everything you need, handled in-house.
+									Everything you need, simplified.
 								</h2>
 							</div>
-							<p className="max-w-lg text-sm text-slate-600">
-								From design to print and merchandise, we keep your brand consistent and
-								polished.
+							<p className="max-w-lg text-sm text-[#4a4a4a]">
+								Fast, consistent outputs for Australian brands.
 							</p>
 						</div>
-						<div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+						<div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 							{services.map((service) => {
 								const Icon = service.icon;
 								return (
 									<div
 										key={service.title}
-										className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+										className="rounded-2xl border border-[#00AEEF]/15 bg-white p-5 shadow-sm"
 									>
-										<div className="flex items-center gap-4">
-											<div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-900 text-white">
+										<div className="flex items-center gap-3">
+											<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#00AEEF] text-white">
 												<Icon className="h-6 w-6" />
 											</div>
 											<div>
-												<h3 className="text-lg font-semibold text-slate-900">
+												<h3 className="text-base font-semibold text-[#1f1f1f]">
 													{service.title}
 												</h3>
-												<p className="text-sm text-slate-600">{service.desc}</p>
+												<p className="text-xs text-[#4a4a4a]">{service.desc}</p>
 											</div>
 										</div>
-										<ul className="mt-4 grid gap-2 text-sm text-slate-600">
+										<ul className="mt-3 grid gap-2 text-xs text-[#4a4a4a]">
 											{service.items.map((item) => (
 												<li key={item} className="flex items-center gap-2">
-													<span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+													<span className="h-1.5 w-1.5 rounded-full bg-[#E4007F]" />
 													{item}
 												</li>
 											))}
@@ -469,22 +445,21 @@ export default function Page() {
 					</div>
 				</section>
 
-				<section id="print" className="scroll-mt-24 bg-white">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+				<section id="print" className="scroll-mt-24 bg-[#f4fbff]">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">Print</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#6b6b6b]">Print</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									Print that looks sharp in hand.
 								</h2>
-								<p className="mt-4 text-sm text-slate-600">
+								<p className="mt-3 text-sm text-[#4a4a4a]">
 									Popular print items for cafes, retail stores, and events across Australia.
-									We manage layout, proofing, and print-ready files.
 								</p>
-								<ul className="mt-6 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
+								<ul className="mt-4 grid gap-2 text-sm text-[#4a4a4a] sm:grid-cols-2">
 									{printItems.map((item) => (
 										<li key={item} className="flex items-center gap-2">
-											<span className="inline-flex h-2 w-2 rounded-full bg-slate-900" />
+											<span className="inline-flex h-2 w-2 rounded-full bg-[#00AEEF]" />
 											{item}
 										</li>
 									))}
@@ -493,27 +468,27 @@ export default function Page() {
 									href="https://m.me/SpectacularDMS"
 									target="_blank"
 									rel="noreferrer"
-									className="mt-6 inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+									className="mt-5 inline-flex items-center justify-center rounded-full bg-[#00AEEF] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0094c7]"
 								>
 									Request a quote
 								</a>
 							</div>
-							<div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-700 p-8 text-white shadow-lg">
-								<h3 className="text-2xl font-['Playfair_Display','Georgia',serif] font-semibold">
+							<div className="rounded-3xl border border-[#00AEEF]/20 bg-white p-6 shadow-sm">
+								<h3 className="text-xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									Print ads that convert.
 								</h3>
-								<p className="mt-3 text-sm text-slate-200">
+								<p className="mt-3 text-sm text-[#4a4a4a]">
 									We help you choose sizes, paper stock, and finishes that look premium while
 									staying affordable.
 								</p>
-								<div className="mt-6 grid gap-4 text-sm">
-									<div className="rounded-2xl bg-white/10 p-4">
+								<div className="mt-4 grid gap-3 text-sm">
+									<div className="rounded-2xl bg-[#f8f9fb] p-4">
 										<p className="font-semibold">Best for promotions</p>
-										<p className="text-slate-200">Seasonal sales, grand openings, and events.</p>
+										<p className="text-[#4a4a4a]">Seasonal sales, launches, and events.</p>
 									</div>
-									<div className="rounded-2xl bg-white/10 p-4">
+									<div className="rounded-2xl bg-[#f8f9fb] p-4">
 										<p className="font-semibold">Consistent branding</p>
-										<p className="text-slate-200">Every piece matches your look and feel.</p>
+										<p className="text-[#4a4a4a]">Every piece matches your brand system.</p>
 									</div>
 								</div>
 							</div>
@@ -522,53 +497,53 @@ export default function Page() {
 				</section>
 
 				<section id="merch" className="scroll-mt-24">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">Merch</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#6b6b6b]">Merch</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									Merch that gets remembered.
 								</h2>
 							</div>
-							<p className="max-w-lg text-sm text-slate-600">
-								Pick from proven categories or ask for custom ideas that match your brand.
+							<p className="max-w-lg text-sm text-[#4a4a4a]">
+								Pick proven categories or ask for custom ideas.
 							</p>
 						</div>
-						<div className="mt-6 flex flex-wrap gap-2">
+						<div className="mt-5 flex flex-wrap gap-2">
 							{merchChips.map((chip) => (
 								<span
 									key={chip}
-									className="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600"
+									className="rounded-full border border-[#E4007F]/30 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#4a4a4a]"
 								>
 									{chip}
 								</span>
 							))}
 						</div>
-						<div className="mt-8 grid gap-6 md:grid-cols-2">
-							<div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-								<h3 className="text-lg font-semibold">Popular merch examples</h3>
-								<ul className="mt-4 grid gap-2 text-sm text-slate-600">
+						<div className="mt-6 grid gap-5 md:grid-cols-2">
+							<div className="rounded-2xl border border-[#E4007F]/15 bg-white p-5 shadow-sm">
+								<h3 className="text-base font-semibold">Popular merch examples</h3>
+								<ul className="mt-3 grid gap-2 text-sm text-[#4a4a4a]">
 									<li className="flex items-center gap-2">
-										<span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+										<span className="h-1.5 w-1.5 rounded-full bg-[#E4007F]" />
 										Apparel: tees, uniforms, hoodies
 									</li>
 									<li className="flex items-center gap-2">
-										<span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+										<span className="h-1.5 w-1.5 rounded-full bg-[#E4007F]" />
 										Drinkware: mugs, cups, bottles
 									</li>
 									<li className="flex items-center gap-2">
-										<span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+										<span className="h-1.5 w-1.5 rounded-full bg-[#E4007F]" />
 										Stickers, decals, and labels
 									</li>
 									<li className="flex items-center gap-2">
-										<span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+										<span className="h-1.5 w-1.5 rounded-full bg-[#E4007F]" />
 										Corporate gifts and event packs
 									</li>
 								</ul>
 							</div>
-							<div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-								<h3 className="text-lg font-semibold">Need help with options?</h3>
-								<p className="mt-4 text-sm text-slate-600">
+							<div className="rounded-2xl border border-[#00AEEF]/15 bg-white p-5 shadow-sm">
+								<h3 className="text-base font-semibold">Need help with options?</h3>
+								<p className="mt-3 text-sm text-[#4a4a4a]">
 									Check out our range of Merchandising options. For pricing, availability,
 									labeling/decoration, ingredient (edible goods), and more please inquire using
 									FB Messenger!
@@ -577,7 +552,7 @@ export default function Page() {
 									href="https://m.me/SpectacularDMS"
 									target="_blank"
 									rel="noreferrer"
-									className="mt-6 inline-flex items-center justify-center rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+									className="mt-4 inline-flex items-center justify-center rounded-full bg-[#E4007F] px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#c7006f]"
 								>
 									Chat on Messenger
 								</a>
@@ -586,30 +561,30 @@ export default function Page() {
 					</div>
 				</section>
 
-				<section id="process" className="scroll-mt-24 bg-white">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+				<section id="process" className="scroll-mt-24 bg-[#fff9db]">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">Process</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#6b6b6b]">Process</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									A simple, reliable workflow.
 								</h2>
 							</div>
-							<p className="max-w-lg text-sm text-slate-600">
-								We keep you informed at every step so there are no surprises.
+							<p className="max-w-lg text-sm text-[#4a4a4a]">
+								Short approvals, clear delivery.
 							</p>
 						</div>
-						<div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+						<div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
 							{processSteps.map((step, index) => (
 								<div
 									key={step.title}
-									className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+									className="rounded-2xl border border-[#2f2f2f]/10 bg-white p-5 shadow-sm"
 								>
-									<div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">
+									<div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#2f2f2f] text-xs font-semibold text-white">
 										{index + 1}
 									</div>
-									<h3 className="mt-4 text-lg font-semibold">{step.title}</h3>
-									<p className="mt-2 text-sm text-slate-600">{step.text}</p>
+									<h3 className="mt-3 text-base font-semibold">{step.title}</h3>
+									<p className="mt-2 text-xs text-[#4a4a4a]">{step.text}</p>
 								</div>
 							))}
 						</div>
@@ -617,32 +592,31 @@ export default function Page() {
 				</section>
 
 				<section id="portfolio" className="scroll-mt-24">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">Portfolio</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#6b6b6b]">Portfolio</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									Recent work highlights.
 								</h2>
 							</div>
-							<p className="max-w-lg text-sm text-slate-600">
-								A mix of design, print, and merchandise projects for local businesses.
+							<p className="max-w-lg text-sm text-[#4a4a4a]">
+								Design, print, and merch projects for local businesses.
 							</p>
 						</div>
-						<div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+						<div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 							{portfolio.map((tile) => (
 								<div
 									key={tile.label}
-									className={`group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br ${tile.tone} p-6 shadow-sm`}
+									className={`group relative overflow-hidden rounded-2xl border border-[#2f2f2f]/10 bg-gradient-to-br ${tile.tone} p-5 shadow-sm`}
 								>
-									<div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
-										<div className="absolute inset-0 bg-slate-900/10" />
-									</div>
-									<div className="relative flex h-40 flex-col justify-between">
-										<span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+									<div className="relative flex h-28 flex-col justify-between">
+										<span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#6b6b6b]">
 											SpectacularDMS
 										</span>
-										<h3 className="text-xl font-semibold text-slate-900">{tile.label}</h3>
+										<h3 className="text-lg font-semibold text-[#1f1f1f]">
+											{tile.label}
+										</h3>
 									</div>
 								</div>
 							))}
@@ -650,30 +624,30 @@ export default function Page() {
 					</div>
 				</section>
 
-				<section className="bg-slate-900 text-white">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+				<section className="bg-[#2f2f2f] text-white">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-300">Pricing</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#f5f5f5]">Pricing</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									Transparent quotes, tailored to you.
 								</h2>
-								<p className="mt-4 text-sm text-slate-200">
+								<p className="mt-3 text-sm text-[#e0e0e0]">
 									We do not offer fixed pricing because every job is different. Pricing
 									depends on quantity, material, labelling/decoration, edible labelling
 									requirements, and timeline.
 								</p>
 							</div>
-							<div className="rounded-3xl bg-white/10 p-6">
+							<div className="rounded-2xl bg-white/10 p-5">
 								<p className="text-lg font-semibold">Need a quick quote?</p>
-								<p className="mt-2 text-sm text-slate-200">
+								<p className="mt-2 text-sm text-[#e0e0e0]">
 									Message us on Messenger for a quick quote.
 								</p>
 								<a
 									href="https://m.me/SpectacularDMS"
 									target="_blank"
 									rel="noreferrer"
-									className="mt-4 inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900"
+									className="mt-4 inline-flex items-center justify-center rounded-full bg-[#E4007F] px-5 py-2 text-sm font-semibold text-white"
 								>
 									Chat on Messenger
 								</a>
@@ -683,26 +657,26 @@ export default function Page() {
 				</section>
 
 				<section className="bg-white">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">Testimonials</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#6b6b6b]">Testimonials</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									Clients who keep coming back.
 								</h2>
 							</div>
-							<p className="max-w-lg text-sm text-slate-600">
-								We focus on value, responsiveness, and consistent quality.
+							<p className="max-w-lg text-sm text-[#4a4a4a]">
+								Value, responsiveness, and consistent quality.
 							</p>
 						</div>
-						<div className="mt-10 grid gap-6 md:grid-cols-3">
+						<div className="mt-6 grid gap-5 md:grid-cols-3">
 							{testimonials.map((item) => (
 								<div
 									key={item.name}
-									className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+									className="rounded-2xl border border-[#2f2f2f]/10 bg-white p-5 shadow-sm"
 								>
-									<p className="text-sm text-slate-600">"{item.quote}"</p>
-									<p className="mt-4 text-sm font-semibold text-slate-900">{item.name}</p>
+									<p className="text-sm text-[#4a4a4a]">"{item.quote}"</p>
+									<p className="mt-3 text-sm font-semibold text-[#1f1f1f]">{item.name}</p>
 								</div>
 							))}
 						</div>
@@ -710,28 +684,28 @@ export default function Page() {
 				</section>
 
 				<section id="faq" className="scroll-mt-24">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">FAQ</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#6b6b6b]">FAQ</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									Answers before you ask.
 								</h2>
 							</div>
-							<p className="max-w-lg text-sm text-slate-600">
+							<p className="max-w-lg text-sm text-[#4a4a4a]">
 								Quick responses to the most common questions.
 							</p>
 						</div>
-						<div className="mt-10 grid gap-4">
+						<div className="mt-6 grid gap-4">
 							{faqs.map((faq) => (
 								<details
 									key={faq.q}
-									className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+									className="rounded-2xl border border-[#2f2f2f]/10 bg-white p-4 shadow-sm"
 								>
-									<summary className="cursor-pointer text-sm font-semibold text-slate-900">
+									<summary className="cursor-pointer text-sm font-semibold text-[#1f1f1f]">
 										{faq.q}
 									</summary>
-									<p className="mt-3 text-sm text-slate-600">{faq.a}</p>
+									<p className="mt-3 text-sm text-[#4a4a4a]">{faq.a}</p>
 								</details>
 							))}
 						</div>
@@ -739,17 +713,17 @@ export default function Page() {
 				</section>
 
 				<section id="contact" className="scroll-mt-24 bg-white">
-					<div className="mx-auto w-full max-w-6xl px-4 py-14 md:px-6">
-						<div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+					<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+						<div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
 							<div>
-								<p className="text-xs uppercase tracking-[0.35em] text-slate-500">Contact</p>
+								<p className="text-xs uppercase tracking-[0.3em] text-[#6b6b6b]">Contact</p>
 								<h2 className="mt-2 text-3xl font-['Playfair_Display','Georgia',serif] font-semibold">
 									Lets build something spectacular.
 								</h2>
-								<p className="mt-4 text-sm text-slate-600">
+								<p className="mt-3 text-sm text-[#4a4a4a]">
 									Contact person: Johnny Kim. Call or message anytime for a quick response.
 								</p>
-								<div className="mt-6 grid gap-3 text-sm text-slate-700">
+								<div className="mt-5 grid gap-3 text-sm text-[#4a4a4a]">
 									<a className="font-semibold" href="tel:0432520943">
 										Call 0432 520 943
 									</a>
@@ -764,12 +738,12 @@ export default function Page() {
 									>
 										Facebook: @SpectacularDMS
 									</a>
-									<p className="text-sm text-slate-500">ABN: 35 422 477 055</p>
+									<p className="text-sm text-[#6b6b6b]">ABN: 35 422 477 055</p>
 								</div>
-								<div className="mt-6 flex flex-wrap gap-3">
+								<div className="mt-5 flex flex-wrap gap-3">
 									<a
 										href="tel:0432520943"
-										className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+										className="rounded-full bg-[#00AEEF] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0094c7]"
 									>
 										Call 0432 520 943
 									</a>
@@ -777,41 +751,41 @@ export default function Page() {
 										href="https://m.me/SpectacularDMS"
 										target="_blank"
 										rel="noreferrer"
-										className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+										className="rounded-full bg-[#E4007F] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#c7006f]"
 									>
 										Chat on Messenger
 									</a>
 								</div>
 							</div>
-							<div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+							<div className="rounded-3xl border border-[#2f2f2f]/10 bg-white p-6 shadow-sm">
 								<form className="grid gap-4">
 									<input id="contact-sent" type="checkbox" className="peer hidden" />
 									<div>
-										<label className="text-sm font-semibold text-slate-700" htmlFor="name">
+										<label className="text-sm font-semibold text-[#4a4a4a]" htmlFor="name">
 											Name
 										</label>
 										<input
 											id="name"
 											name="name"
 											required
-											className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-2 text-sm outline-none transition focus:border-slate-400"
+											className="mt-2 w-full rounded-xl border border-[#2f2f2f]/20 px-4 py-2 text-sm outline-none transition focus:border-[#00AEEF]"
 											placeholder="Your name"
 										/>
 									</div>
 									<div>
-										<label className="text-sm font-semibold text-slate-700" htmlFor="phone">
+										<label className="text-sm font-semibold text-[#4a4a4a]" htmlFor="phone">
 											Phone
 										</label>
 										<input
 											id="phone"
 											name="phone"
 											required
-											className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-2 text-sm outline-none transition focus:border-slate-400"
+											className="mt-2 w-full rounded-xl border border-[#2f2f2f]/20 px-4 py-2 text-sm outline-none transition focus:border-[#00AEEF]"
 											placeholder="Your phone number"
 										/>
 									</div>
 									<div>
-										<label className="text-sm font-semibold text-slate-700" htmlFor="request">
+										<label className="text-sm font-semibold text-[#4a4a4a]" htmlFor="request">
 											Request
 										</label>
 										<textarea
@@ -819,21 +793,18 @@ export default function Page() {
 											name="request"
 											required
 											rows={4}
-											className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-2 text-sm outline-none transition focus:border-slate-400"
+											className="mt-2 w-full rounded-xl border border-[#2f2f2f]/20 px-4 py-2 text-sm outline-none transition focus:border-[#00AEEF]"
 											placeholder="What do you need?"
 										/>
 									</div>
 									<label
 										htmlFor="contact-sent"
-										className="inline-flex cursor-pointer items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+										className="inline-flex cursor-pointer items-center justify-center rounded-full bg-[#00AEEF] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0094c7]"
 									>
 										Send request
 									</label>
 									<p className="hidden text-sm text-emerald-600 peer-checked:block">
 										Thanks! We will get back to you shortly.
-									</p>
-									<p className="text-xs text-slate-500">
-										This form shows a success message locally (no backend submission).
 									</p>
 								</form>
 							</div>
@@ -842,24 +813,24 @@ export default function Page() {
 				</section>
 			</main>
 
-			<footer className="border-t border-slate-200 bg-slate-950 text-white">
-				<div className="mx-auto w-full max-w-6xl px-4 py-12 md:px-6">
-					<div className="grid gap-8 md:grid-cols-2">
+			<footer className="border-t border-[#2f2f2f]/10 bg-[#1f1f1f] text-white">
+				<div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
+					<div className="grid gap-6 md:grid-cols-2">
 						<div>
-							<p className="text-xs uppercase tracking-[0.35em] text-slate-400">SpectacularDMS</p>
+							<p className="text-xs uppercase tracking-[0.3em] text-[#d6d6d6]">SpectacularDMS</p>
 							<p className="mt-2 text-2xl font-['Playfair_Display','Georgia',serif] font-semibold">
 								Spectacular Design &amp; Merch Solutions
 							</p>
-							<p className="mt-2 text-sm text-slate-300">
+							<p className="mt-2 text-sm text-[#d6d6d6]">
 								Design, print ads, and merchandise made easy for Australian businesses.
 							</p>
-							<p className="mt-4 text-sm text-slate-400">ABN: 35 422 477 055</p>
+							<p className="mt-4 text-sm text-[#d6d6d6]">ABN: 35 422 477 055</p>
 						</div>
 						<div className="space-y-4">
 							<div className="flex flex-wrap gap-3">
 								<a
 									href="tel:0432520943"
-									className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900"
+									className="rounded-full bg-[#00AEEF] px-5 py-2 text-sm font-semibold text-white"
 								>
 									Call 0432 520 943
 								</a>
@@ -867,12 +838,12 @@ export default function Page() {
 									href="https://m.me/SpectacularDMS"
 									target="_blank"
 									rel="noreferrer"
-									className="rounded-full border border-white/40 px-5 py-2 text-sm font-semibold text-white"
+									className="rounded-full bg-[#E4007F] px-5 py-2 text-sm font-semibold text-white"
 								>
 									Chat on Messenger
 								</a>
 							</div>
-							<div className="text-sm text-slate-400">
+							<div className="text-sm text-[#d6d6d6]">
 								<p>Contact person: Johnny Kim</p>
 								<p>Phone: 0432 520 943</p>
 								<p>Email: spectaculardms@gmail.com</p>
@@ -886,7 +857,7 @@ export default function Page() {
 			<div className="fixed bottom-4 right-4 z-50 flex flex-col gap-2 sm:hidden">
 				<a
 					href="tel:0432520943"
-					className="rounded-full bg-slate-900 px-4 py-3 text-xs font-semibold text-white shadow-lg"
+					className="rounded-full bg-[#00AEEF] px-4 py-3 text-xs font-semibold text-white shadow-lg"
 				>
 					Call
 				</a>
@@ -894,7 +865,7 @@ export default function Page() {
 					href="https://m.me/SpectacularDMS"
 					target="_blank"
 					rel="noreferrer"
-					className="rounded-full border border-slate-300 bg-white px-4 py-3 text-xs font-semibold text-slate-700 shadow-lg"
+					className="rounded-full bg-[#E4007F] px-4 py-3 text-xs font-semibold text-white shadow-lg"
 				>
 					Messenger
 				</a>
